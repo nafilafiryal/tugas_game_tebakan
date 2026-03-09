@@ -15,6 +15,12 @@ void main() {
 
     if (input != null) {
       tebakan = int.parse(input);
+
+      if (tebakan < angkaRahasia) {
+        print("-> Terlalu kecil! Naikkan lagi.");
+      } else if (tebakan > angkaRahasia) {
+        print("-> Terlalu besar! Turunkan lagi.");
+      }
     }
   }
   print("Selamat! Kamu berhasil menebak angka $angkaRahasia.");
